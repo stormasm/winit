@@ -597,12 +597,12 @@ impl ApplicationHandler for Application {
 
     fn can_create_surfaces(&mut self, event_loop: &dyn ActiveEventLoop) {
         info!("Ready to create surfaces");
-        self.dump_monitors(event_loop);
+        //self.dump_monitors(event_loop);
 
         // Create initial window.
         self.create_window(event_loop, None).expect("failed to create initial window");
 
-        self.print_help();
+        //self.print_help();
     }
 
     fn about_to_wait(&mut self, event_loop: &dyn ActiveEventLoop) {
